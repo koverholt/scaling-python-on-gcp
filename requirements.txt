@@ -1,0 +1,6 @@
+dask
+distributed
+matplotlib
+requests
+xarray
+rioxarray
