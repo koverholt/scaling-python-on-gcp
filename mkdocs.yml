@@ -1,0 +1,23 @@
+site_name: Scaling Python on GCP
+
+theme:
+  name: material
+  palette:
+    primary: blue
+
+nav:
+    - 'index.md'
+    - 'small.md'
+    - 'medium.md'
+    - 'large.md'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/koverholt
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/koverholt/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/koverholt
+
+copyright: Copyright &copy; 2022 Kristopher Overholt

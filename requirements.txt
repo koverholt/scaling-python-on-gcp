@@ -1,6 +1,8 @@
 dask
 distributed
 matplotlib
+mkdocs
+mkdocs-material
 requests
-xarray
 rioxarray
+xarray
