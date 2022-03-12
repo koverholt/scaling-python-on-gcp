@@ -1,36 +1,44 @@
 # Small-scale Computations
 
-## Prerequisites
+## Overview
 
-- Clone this repository
-- Install the Python packages in this repository by running `pip install -r requirements.txt`.
-- Create a notebook in Vertex AI on GCP
-- Create a Kubernetes cluster in GKE on GCP
+The
+[notebook for this example](https://github.com/koverholt/scaling-python-on-gcp/blob/main/1-small-scale/satellite-imagery.ipynb)
+runs small-scale computations on a laptop using XArray and Dask.
 
-## Use case
+## Step 1: Clone the repository
 
-The notebooks in this repository are used to demonstrate how to scale Python on
-GCP for image processing on satellite data. Specifically, these notebooks
-compute the normalized difference vegetation index (NDVI) on Landsat 8 satellite
-images using XArray and Dask.
+Clone the repository with these examples by running the following command in
+your terminal:
 
-Thanks to the open data policies of USGS and NASA,
-the Landsat dataset is available for free as part of the Google Public Cloud
-Data program. It can be used by anyone as part of Google Cloud.
+```shell
+git clone https://github.com/koverholt/scaling-python-on-gcp
+```
 
-## Multiple scales
+## Step 2: Install dependencies
 
-The notebooks for this use case exercise Dask and XArray at three different
-scales:
+Install the Python packages in this repository by running:
 
-1. Small-scale computations on a laptop (10s of satellite images)
-2. Medium-scale computations on a virtual machine (100s of satellite images)
-3. Large-scale computations on a Kubernetes cluster (1,000s of satellite images)
+```shell
+pip install -r requirements.txt
+```
 
-## Additional resources
+## Step 3: Run the small-scale notebook
 
-Refer to the respective projects and documentation for more information about
-[Dask](https://dask.org/), [XArray](https://xarray.pydata.org/en/stable/),
-[Dask Kubernetes](https://kubernetes.dask.org),
-[GCP](https://cloud.google.com/), and the publicly available
-[Landsat data on GCP](https://cloud.google.com/storage/docs/public-datasets/landsat).
+The notebook for this small-scale computation contains all of the remaining code
+that you need to run for this example. You can view and run the notebook by
+using:
+
+```shell
+jupyter lab
+```
+
+Then, run through all of the notebook cells to download the satellite image
+data, start a local Dask cluster on your machine, and compute and visualize the
+NDVI.
+
+## Success!
+
+Congratulations! You've successfully run the small-scale computation example and
+calculated the normalized difference vegetation index (NDVI) on a satellite
+image from the comfort of your laptop.

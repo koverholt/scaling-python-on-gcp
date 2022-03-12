@@ -1,5 +1,9 @@
+blosc
 dask
 distributed
+ipywidgets
+jupyterlab
+lz4
 matplotlib
 mkdocs
 mkdocs-material
