@@ -4,6 +4,7 @@ dask
 distributed
 ipywidgets
 jupyterlab
+jupyter-server-proxy
 lz4
 matplotlib
 mkdocs
