@@ -39,6 +39,6 @@ NDVI.
 
 ## Success!
 
-Congratulations! You've successfully run the small-scale computation example and
-calculated the normalized difference vegetation index (NDVI) on a satellite
+Congratulations! 🎉 You've successfully run the small-scale computation example
+and calculated the normalized difference vegetation index (NDVI) on a satellite
 image from the comfort of your laptop.
