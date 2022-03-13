@@ -1,0 +1,27 @@
+name: notebook-tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  notebook-tests:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bootstrap environment
+        run: |
+          curl -O https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh
+          bash Miniconda3-py39_4.9.2-Linux-x86_64.sh -bp $HOME/miniconda
+          echo "$HOME/miniconda/bin" >> $GITHUB_PATH
+          $HOME/miniconda/bin/pip install -r requirements.txt
+      - name: Run all notebooks
+        run: $HOME/miniconda/bin/pytest --nbmake

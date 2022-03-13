@@ -1,36 +1,73 @@
 # Medium-scale Computations
 
-## Prerequisites
+## Overview
 
-- Clone this repository
-- Install the Python packages in this repository by running `pip install -r requirements.txt`.
-- Create a notebook in Vertex AI on GCP
-- Create a Kubernetes cluster in GKE on GCP
+The
+[notebook for this example](https://github.com/koverholt/scaling-python-on-gcp/blob/main/2-medium-scale/satellite-imagery.ipynb)
+runs medium-scale computations on a notebook instance in GCP Vertex AI Workbench
+using XArray and Dask.
 
-## Use case
+## Step 1: Create a notebook environment in Vertex AI
 
-The notebooks in this repository are used to demonstrate how to scale Python on
-GCP for image processing on satellite data. Specifically, these notebooks
-compute the normalized difference vegetation index (NDVI) on Landsat 8 satellite
-images using XArray and Dask.
+Follow the steps in the GCP documentation to [create a user-managed notebook
+instance within Vertex AI
+Workbench](https://cloud.google.com/vertex-ai/docs/workbench/user-managed/create-user-managed-notebooks-instance).
 
-Thanks to the open data policies of USGS and NASA,
-the Landsat dataset is available for free as part of the Google Public Cloud
-Data program. It can be used by anyone as part of Google Cloud.
+From the Google Cloud Console, navigate to `Vertex AI` > `Workbench`, then click
+on `New Notebook` in the `User-managed Notebooks` tab. For this example you can
+select the `Python 3` environment, give your notebook a name, and select your
+desired region.
 
-## Multiple scales
+<img src="/images/medium-scale-create-notebook.png" width="500px" style="display: block; margin-left: auto; margin-right: auto;" alt="Creating a notebook instance in GCP Vertex AI Workbench">
 
-The notebooks for this use case exercise Dask and XArray at three different
-scales:
+You can click on the `Create` button to create your notebook, or you can
+customize your machine type and other settings by clicking on the
+`Advanced Options` button.
 
-1. Small-scale computations on a laptop (10s of satellite images)
-2. Medium-scale computations on a virtual machine (100s of satellite images)
-3. Large-scale computations on a Kubernetes cluster (1,000s of satellite images)
+For this example, we'll use a `n1-standard-64` notebook instance that has 16
+vCPUs and 60 GB RAM by setting the following machine configuration in the
+`Advanced Options` page:
 
-## Additional resources
+<img src="/images/medium-scale-advanced-options.png" width="600px" style="display: block; margin-left: auto; margin-right: auto;" alt="Specifying a machine configuration in GCP Vertex AI Workbench">
 
-Refer to the respective projects and documentation for more information about
-[Dask](https://dask.org/), [XArray](https://xarray.pydata.org/en/stable/),
-[Dask Kubernetes](https://kubernetes.dask.org),
-[GCP](https://cloud.google.com/), and the publicly available
-[Landsat data on GCP](https://cloud.google.com/storage/docs/public-datasets/landsat).
+Once the notebook instance is running, click on the `Open JupyterLab` button to
+view the notebook environment in your browser.
+
+## Step 2: Clone the repository
+
+From within the notebook environment, open a new terminal window and clone the
+repository with these examples by running the following command:
+
+```shell
+git clone https://github.com/koverholt/scaling-python-on-gcp
+```
+
+## Step 3: Install dependencies
+
+Change to the `scaling-python-on-gcp` directory by running:
+
+```shell
+cd scaling-python-on-gcp
+```
+
+Install the Python packages in this repository by running:
+
+```shell
+pip install -r requirements.txt
+```
+
+## Step 4: Run the medium-scale notebook
+
+Open the notebook located at
+`scaling-python-on-gcp/2-medium-scale/satellite-imagery.ipynb` for this
+medium-scale computation, which contains all of the remaining code that you need
+to run for this example.
+
+Run through all of the notebook cells to point to the satellite image data,
+start a local Dask cluster on your machine, and compute and visualize the NDVI.
+
+## Success!
+
+Congratulations! 🎉 You've successfully run the medium-scale computation example
+and calculated the normalized difference vegetation index (NDVI) on a satellite
+image from a notebook instance within GCP Vertex AI Workbench.

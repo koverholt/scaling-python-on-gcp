@@ -9,6 +9,7 @@ lz4
 matplotlib
 mkdocs
 mkdocs-material
+nbmake
 requests
 rioxarray
 xarray
