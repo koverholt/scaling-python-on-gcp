@@ -1,6 +1,6 @@
 # Scaling Python on GCP
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/28701e96-c82b-4224-8a01-dcb3af348a50/deploy-status)](https://app.netlify.com/sites/scaling-python-on-gcp/deploys)
+[![notebook-tests](https://github.com/koverholt/scaling-python-on-gcp/actions/workflows/main.yml/badge.svg)](https://github.com/koverholt/scaling-python-on-gcp/actions/workflows/main.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/28701e96-c82b-4224-8a01-dcb3af348a50/deploy-status)](https://app.netlify.com/sites/scaling-python-on-gcp/deploys)
 
 ## Full documentation
 
