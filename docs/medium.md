@@ -66,6 +66,8 @@ to run for this example.
 Run through all of the notebook cells to point to the satellite image data,
 start a local Dask cluster on your machine, and compute and visualize the NDVI.
 
+<img src="/images/medium-scale-notebook.png" width="1000px" style="display: block; margin-left: auto; margin-right: auto;" alt="Running the medium-scale satellite imagery notebook">
+
 ## Success!
 
 Congratulations! 🎉 You've successfully run the medium-scale computation example
