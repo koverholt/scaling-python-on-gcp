@@ -24,4 +24,4 @@ jobs:
           echo "$HOME/miniconda/bin" >> $GITHUB_PATH
           $HOME/miniconda/bin/pip install -r requirements.txt
       - name: Run all notebooks
-        run: $HOME/miniconda/bin/pytest --nbmake
+        run: $HOME/miniconda/bin/pytest --nbmake 1-small-scale/*ipynb
