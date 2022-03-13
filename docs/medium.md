@@ -71,5 +71,5 @@ start a local Dask cluster on your machine, and compute and visualize the NDVI.
 ## Success!
 
 Congratulations! 🎉 You've successfully run the medium-scale computation example
-and calculated the normalized difference vegetation index (NDVI) on a satellite
-image from a notebook instance within GCP Vertex AI Workbench.
+and calculated the normalized difference vegetation index (NDVI) on 10 satellite
+images from a notebook instance within GCP Vertex AI Workbench.
