@@ -6,15 +6,16 @@ spec:
   containers:
   - image: daskdev/dask:latest
     imagePullPolicy: IfNotPresent
-    args: [dask-worker, --no-dashboard, --memory-limit, 15GB, --death-timeout, '300']
+    args: [dask-worker, --no-dashboard, --nthreads, '2', --memory-limit, 6GB, --death-timeout, '300']
     name: dask
     env:
       - name: EXTRA_PIP_PACKAGES
-        value: blosc==1.10.6 bokeh==2.4.2 dask==2022.2.0 distributed==2022.2.0 lz4==4.0.0 matplotlib==3.5.1 requests==2.25.0 rioxarray==0.9.1 xarray==0.20.2
+        value: blosc==1.10.6 bokeh==2.4.2 dask==2022.2.1 distributed==2022.2.1 lz4==4.0.0 matplotlib==3.5.1 requests==2.27.1 rioxarray==0.10.2 xarray==2022.3.0
+
     resources:
       limits:
-        cpu: "3"
-        memory: 15G
+        cpu: "2"
+        memory: 6G
       requests:
-        cpu: "3"
-        memory: 15G
+        cpu: "2"
+        memory: 6G
