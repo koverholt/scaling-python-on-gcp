@@ -33,16 +33,36 @@ vCPUs and 360 GB RAM by setting the following machine configuration in the
 Once the notebook instance is running, click on the `Open JupyterLab` button to
 view the notebook environment in your browser.
 
-## Step 2: Clone the repository
+## Step 2: Install Python 3.9 and notebook kernel
 
-From within the notebook environment, open a new terminal window and clone the
-repository with these examples by running the following command:
+From within the notebook environment, open a new terminal window and create a
+conda environment with Python 3.9:
+
+```shell
+conda create -n py39 python=3.9
+```
+
+Activate the newly created environment:
+
+```shell
+conda activate py39
+```
+
+Install and register a notebook kernel for this environment.
+
+```shell
+conda install ipykernel
+```
+
+## Step 3: Clone the repository
+
+Clone the repository with these examples by running the following command:
 
 ```shell
 git clone https://github.com/koverholt/scaling-python-on-gcp
 ```
 
-## Step 3: Install dependencies
+## Step 4: Install dependencies
 
 Change to the `scaling-python-on-gcp` directory by running:
 
@@ -56,12 +76,15 @@ Install the Python packages in this repository by running:
 pip install -r requirements.txt
 ```
 
-## Step 4: Run the medium-scale notebook
+## Step 5: Run the medium-scale notebook
 
 Open the notebook located at
 `scaling-python-on-gcp/2-medium-scale/satellite-imagery.ipynb` for this
 medium-scale computation, which contains all of the remaining code that you need
 to run for this example.
+
+Be sure to switch to the notebook kernel for the `py39` conda environment that
+you created earlier.
 
 Run through all of the notebook cells to point to the satellite image data,
 start a local Dask cluster on your machine, and compute and visualize the NDVI.
