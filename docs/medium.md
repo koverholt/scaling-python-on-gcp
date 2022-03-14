@@ -16,7 +16,7 @@ Workbench](https://cloud.google.com/vertex-ai/docs/workbench/user-managed/create
 From the Google Cloud Console, navigate to `Vertex AI` > `Workbench`, then click
 on `New Notebook` in the `User-managed Notebooks` tab. For this example you can
 select the `Python 3` environment, give your notebook a name, and select your
-desired region.
+desired region and zone.
 
 <img src="/images/medium-scale-create-notebook.png" width="500px" style="display: block; margin-left: auto; margin-right: auto;" alt="Creating a notebook instance in GCP Vertex AI Workbench">
 
@@ -83,7 +83,7 @@ Open the notebook located at
 medium-scale computation, which contains all of the remaining code that you need
 to run for this example.
 
-Be sure to switch to the notebook kernel for the `py39` conda environment that
+Be sure to switch to the notebook kernel for the `py38` conda environment that
 you created earlier.
 
 Run through all of the notebook cells to point to the satellite image data,
@@ -94,5 +94,5 @@ start a local Dask cluster on your machine, and compute and visualize the NDVI.
 ## Success!
 
 Congratulations! 🎉 You've successfully run the medium-scale computation example
-and calculated the normalized difference vegetation index (NDVI) on 10 satellite
+and calculated the normalized difference vegetation index (NDVI) on 30 satellite
 images from a notebook instance within GCP Vertex AI Workbench.

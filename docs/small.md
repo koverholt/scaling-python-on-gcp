@@ -37,6 +37,8 @@ Then, run through all of the notebook cells to download the satellite image
 data, start a local Dask cluster on your machine, and compute and visualize the
 NDVI.
 
+<img src="/images/small-scale-notebook.png" width="1000px" style="display: block; margin-left: auto; margin-right: auto;" alt="Running the small-scale satellite imagery notebook">
+
 ## Success!
 
 Congratulations! 🎉 You've successfully run the small-scale computation example

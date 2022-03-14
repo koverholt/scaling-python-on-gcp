@@ -10,8 +10,7 @@ spec:
     name: dask
     env:
       - name: EXTRA_PIP_PACKAGES
-        value: blosc==1.10.6 bokeh==2.4.2 dask==2022.2.1 distributed==2022.2.1 lz4==4.0.0 matplotlib==3.5.1 requests==2.27.1 rioxarray==0.10.2 xarray==2022.3.0
-
+        value: blosc==1.10.6 bokeh==2.4.2 dask==2022.2.1 distributed==2022.2.1 google-cloud-storage==2.1.0 lz4==4.0.0 matplotlib==3.5.1 requests==2.27.1 rioxarray==0.10.2 xarray==2022.3.0
     resources:
       limits:
         cpu: "2"
