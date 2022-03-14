@@ -1,6 +1,7 @@
 blosc==1.10.6
 bokeh==2.4.2
 dask==2022.2.0
+dask-kubernetes==2022.1.0
 distributed==2022.2.0
 ipywidgets==7.6.5
 jupyterlab==3.3.1
