@@ -33,19 +33,19 @@ vCPUs and 360 GB RAM by setting the following machine configuration in the
 Once the notebook instance is running, click on the `Open JupyterLab` button to
 view the notebook environment in your browser.
 
-## Step 2: Install Python 3.9 and notebook kernel
+## Step 2: Create a new Python environment and notebook kernel
 
 From within the notebook environment, open a new terminal window and create a
-conda environment with Python 3.9:
+conda environment with Python 3.8:
 
 ```shell
-conda create -n py39 python=3.9
+conda create -n py38 python=3.8
 ```
 
 Activate the newly created environment:
 
 ```shell
-conda activate py39
+conda activate py38
 ```
 
 Install and register a notebook kernel for this environment.
