@@ -22,7 +22,13 @@ For this example, we'll use 10 nodes on a cluster with machine types of
 `e2-standard-4`, which have 4 vCPUs and 16 GB RAM each, along with a 10 GB boot
 disk size.
 
-<img src="/images/large-scale-machine-configuration.png" width="700px" style="display: block; margin-left: auto; margin-right: auto;" alt="Specifying a machine configuration in GCP Vertex AI Workbench">
+<img src="/images/large-scale-machine-configuration.png" width="700px" style="display: block; margin-left: auto; margin-right: auto;" alt="Specifying a machine configuration in Google Kubernetes Engine">
+
+Because we will be writing the processed images to a bucket in Google Cloud
+Storage, we'll need to configure the `Access Scopes` in the `Node Security`
+settings to `Allow full access to all Cloud APIs`:
+
+<img src="/images/large-scale-node-security.png" width="700px" style="display: block; margin-left: auto; margin-right: auto;" alt="Configuring node security in Google Kubernetes Engine">
 
 Once the Kubernetes cluster is running, we're ready to proceed to the next step.
 
@@ -68,5 +74,6 @@ start a Dask cluster on Kubernetes in GKE, and compute and visualize the NDVI.
 ## Success!
 
 Congratulations! 🎉 You've successfully run the large-scale computation example
-and calculated the normalized difference vegetation index (NDVI) on 200 satellite
-images from a notebook instance within GCP Vertex AI Workbench.
+and calculated the normalized difference vegetation index (NDVI) on 200
+satellite images on a GKE cluster in GCP and save the processed images to Google
+Cloud Storage.
