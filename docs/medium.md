@@ -24,8 +24,8 @@ You can click on the `Create` button to create your notebook, or you can
 customize your machine type and other settings by clicking on the
 `Advanced Options` button.
 
-For this example, we'll use a `n1-standard-64` notebook instance that has 16
-vCPUs and 60 GB RAM by setting the following machine configuration in the
+For this example, we'll use a `n1-standard-96` notebook instance that has 96
+vCPUs and 360 GB RAM by setting the following machine configuration in the
 `Advanced Options` page:
 
 <img src="/images/medium-scale-advanced-options.png" width="600px" style="display: block; margin-left: auto; margin-right: auto;" alt="Specifying a machine configuration in GCP Vertex AI Workbench">
