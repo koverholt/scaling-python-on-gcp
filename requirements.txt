@@ -1,4 +1,4 @@
-blosc==1.10.6
+blosc2==3.12.2
 bokeh==2.4.2
 dask==2022.2.1
 dask-kubernetes==2022.1.0
